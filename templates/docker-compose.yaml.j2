@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  redis:
+    container_name: {{ REDIS_CONTAINER_NAME }}
+    image: redis
+    command: redis-server --appendonly yes
+    restart: always
+    ports:
+      - {{ REDIS_PORT }}:6379
+    volumes:
+      - {{ SRV_PATH }}/redis:/data

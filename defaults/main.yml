@@ -1,0 +1,7 @@
+---
+# defaults file for redis
+
+REDIS_CONTAINER_NAME: 'redis'
+REDIS_PORT: 6379
+SRV_PATH: /data/srv
+OPT_PATH: /opt/gengxiankun-galaxy

@@ -10,4 +10,7 @@ services:
     ports:
       - {{ REDIS_PORT }}:6379
     volumes:
-      - {{ SRV_PATH }}/redis:/data
+      - {{ REDIS_CONTAINER_NAME }}:/data
+
+volumes:
+  {{ REDIS_CONTAINER_NAME }}:
